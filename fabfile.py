@@ -51,7 +51,7 @@ def deploy():
     with cd(DEPLOY_DIR):
         with settings(warn_only=True):
             rm(path=PROJECT_DIR,)
-        run("git clone https://coding.net/rsj217/myproject.git")
+        run("git clone git@github.com:strongant/myproject.git")
     print blue("install the virtualenv")
     print blue("*"*40)
     # 安装 python 虚拟环境
